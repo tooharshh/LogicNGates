@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.logicgatesimulator.Controller">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="1000.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#clearAll" text="Clear All" />
+                  <MenuItem mnemonicParsing="false" onAction="#switchToMainScreen" text="Main Screen" />
+                  <MenuItem mnemonicParsing="false" onAction="#exitProgram" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleUndo" text="Undo" />
+              <MenuItem mnemonicParsing="false" onAction="#handleRedo" text="Redo" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TreeView fx:id="SelectionTree" layoutX="14.0" layoutY="41.0" onMouseClicked="#handleGateSelection" prefHeight="548.0" prefWidth="200.0" />
+      <Pane fx:id="Pane" layoutX="220.0" layoutY="41.0" prefHeight="548.0" prefWidth="770.0" style="-fx-background-color: white; -fx-border-color: black;" />
+      <ImageView fx:id="selectedImageView" fitHeight="60.0" fitWidth="99.0" layoutX="41.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+   </children>
+</AnchorPane>

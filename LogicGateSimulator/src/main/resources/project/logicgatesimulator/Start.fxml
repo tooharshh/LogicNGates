@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.logicgatesimulator.Controller">
+   <children>
+      <Label layoutX="250.0" layoutY="100.0" text="Logic Gate Simulator">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="350.0" layoutY="300.0" mnemonicParsing="false" onAction="#switchToSimulator" text="Start Simulator" />
+      <Button layoutX="350.0" layoutY="350.0" mnemonicParsing="false" onAction="#exitProgram" text="Exit" />
+   </children>
+</AnchorPane>
